@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <h1>Enter a value</h1>
+
+  <input type="text" id="data" placeholder="please enter any name">
+
+  <button onclick="res()">Capitalize</button>
+
+  <p id="output"></p>
+
+  <script>
+
+function res() {
+
+
+ const a = document.getElementById("data").value;
+
+// const ans = a.split("").a[0].toUppercase();
+
+const ans1 = a.split("").slice(0,1).join("").toUpperCase();
+
+const ans2 = a.split("").slice(1).join("");
+// console.log(ans)
+// console.log(ans2)
+
+// console.log(ans + ans2);
+
+const ans = ans1 + ans2;
+
+document.getElementById("output").innerHTML = ans;
+
+
+}
+   
+  </script>
+</body>
+</html>
